@@ -1,0 +1,27 @@
+<h1>Works</h1>
+
+<!-- <h2>Student List:</h2>
+<div *ngFor="let s of students">{{s.name}}</div>
+
+<h2>Faculty List:</h2>
+<div *ngFor="let f of faculties">{{f.name}}</div> -->
+
+<div id="student">
+  Name: <input #newname type="text">
+  Reg No: <input #newreg type="text">
+  Phone: <input #newphone type="text">
+  <button (click)="addStudent(newname.value, newreg.value, newphone.value)">Submit</button>
+</div>
+<br><br>
+
+<div id="faculty">
+  Name: <input #newfname type="text">
+  Reg No: <input #newfreg type="text">
+  Phone: <input #newfphone type="text">
+  <button (click)="addFaculty(newfname.value, newfreg.value, newfphone.value)">Submit</button>
+</div>
+
+
+<app-student [student]="students" />
+
+<app-faculty [faculty]="faculties" />

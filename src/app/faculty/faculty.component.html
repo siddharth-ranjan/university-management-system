@@ -1,0 +1,11 @@
+<!-- <p>faculty works!</p> -->
+
+
+<h1>Faculty List from Faculty Comp</h1>
+<ul *ngFor="let f of faculties">
+    <li *ngIf="f.phone!=0">
+        <span>Name: {{f.name}}</span><br><br>
+        <span>Registraion Number: {{f.regno}}</span><br><br>
+        <span>Phone: {{f.phone}}</span><br><br>
+    </li>
+</ul>
